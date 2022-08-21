@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="700.0" prefWidth="800.0" stylesheets="@details.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.georgiancollege.comp1011m2022ice9.DetailsViewController">
+    <center>
+
+        <HBox alignment="CENTER" spacing="30" stylesheets="@details.css">
+
+            <VBox alignment="CENTER" spacing="10" style="-fx-width:250px; -fx-alignment :CENTER;">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#back" stylesheets="@details.css" text="Back" />
+                    <ImageView fx:id="poster" fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+                </children>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="10" style="-fx-width:250px; -fx-alignment :CENTER;">
+                <children>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Title : " />
+                            <Label fx:id="title" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Year : " />
+                            <Label fx:id="year" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Rated : " />
+                            <Label fx:id="rated" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Released : " />
+                            <Label fx:id="released" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Runtime : " />
+                            <Label fx:id="runtime" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Genre : " />
+                            <Label fx:id="genre" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Director : " />
+                            <Label fx:id="director" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Writers : " />
+                            <Label fx:id="writers" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Actors : " />
+                            <Label fx:id="actors" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Plot : " />
+                            <Label fx:id="plot" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                    <HBox alignment="CENTER" spacing="5">
+                        <children>
+                            <Label styleClass="label-text" text="Type : " />
+                            <Label fx:id="type" maxWidth="600" wrapText="true" />
+                        </children>
+                    </HBox>
+
+                </children>
+            <stylesheets>
+               <URL value="@details.css" />
+               <URL value="@app.css" />
+            </stylesheets>
+            </VBox>
+        </HBox>
+
+    </center>
+</BorderPane>

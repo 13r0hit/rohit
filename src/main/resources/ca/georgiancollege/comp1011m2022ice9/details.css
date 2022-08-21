@@ -1,0 +1,35 @@
+.label-text{
+    -fx-font-weight: bold;
+    -fx-min-width:70px;
+    -fx-max-width:70px;
+}
+
+HBox{
+    -fx-alignment:TOP_LEFT;
+    -fx-max-width:600px;
+}
+.root {
+    -fx-background-color:  #E0FFDD;
+}
+
+
+.label
+{
+    -fx-background-color: #8FBC8F;
+    -fx-text-fill:Black;
+
+    -fx-border-color: black;
+    -fx-border-radius: 1;
+}
+
+.table-column
+{
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-background-color: #8FBC8F;
+    -fx-text-fill: BLACK;
+    -fx-border-color: black;
+    -fx-border-radius: 1;
+}

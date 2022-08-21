@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@details.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.georgiancollege.comp1011m2022ice9.SearchViewController">
+    <children>
+        <BorderPane fx:id="borderPane" layoutX="200.0" layoutY="88.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <HBox prefHeight="31.0" prefWidth="600.0" stylesheets="@details.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <TextField fx:id="searchTextField" promptText="Movie Title" />
+                        <Button mnemonicParsing="false" onAction="#searchButtonClicked" stylesheets="@details.css" text="Search" />
+                    </children>
+                </HBox>
+            </top>
+            <center>
+                <ListView fx:id="resultsListView" prefHeight="200.0" prefWidth="200.0" stylesheets="@details.css" BorderPane.alignment="CENTER" />
+            </center>
+            <right>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30" stylesheets="@details.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+
+
+                        <Button fx:id="details" disable="true" mnemonicParsing="false" onAction="#viewDetails" stylesheets="@details.css" text="Details" />
+                    </children>
+                </VBox>
+            </right>
+        </BorderPane>
+    </children>
+</AnchorPane>
